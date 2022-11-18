@@ -1,0 +1,264 @@
+* {
+    text-decoration: none;
+}
+
+body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: white;
+    margin: 0;
+    /* Gradient css */
+    background-color: #FBAB7E;
+    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+}
+
+h1 {
+    margin: 50px;
+    font-weight: lighter;
+    font-size: 20px;
+    color: black;
+    font-family: Arial;
+    text-align: left;
+    font-style: normal;
+
+
+}
+
+.entete {
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    background-color: brown;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin: 50px;
+    cursor: pointer;
+}
+
+
+.h1 {
+    text-align: center;
+}
+
+.imageheader img {
+    border-radius: 100px;
+    width: 40%;
+    margin-left: 10%;
+    margin-top: 10px;
+}
+
+@media (max-width: 1200px) {
+    h1 {
+        margin: 50px;
+        font-weight: lighter;
+        font-size: 20px;
+        color: black;
+        font-family: Arial;
+        text-align: left;
+        font-style: normal;
+
+
+    }
+
+    .entete {
+        flex-wrap: wrap;
+
+    }
+
+    ul {
+        display: flex;
+        list-style-type: none;
+    }
+
+    nav ul li {
+        margin: 20px;
+        cursor: pointer;
+    }
+}
+
+.listedesprojets {
+    display: flex;
+    justify-content: space-around;
+
+
+}
+
+.modal {
+    margin: 0;
+    padding: 0;
+}
+
+.projet {
+    width: 20%;
+    height: 90%;
+    background-color: aqua;
+    border-radius: 20px;
+    justify-content: space-between;
+    margin: auto;
+
+
+}
+
+.tritre2deprojet {
+    text-align: center;
+}
+
+.borderprojet {
+    display: flex;
+    margin-bottom: 15%;
+    margin-top: 5%;
+}
+
+@media (max-width: 500px) {
+    .borderprojet {
+        width: 500px;
+        display: block;
+    }
+
+    .projet {
+        width: 60%;
+        height: 90%;
+        background-color: white;
+        border-radius: 20px;
+        justify-content: space-between;
+        margin: auto;
+    }
+}
+
+.projet:hover {
+    background-color: aqua;
+    cursor: pointer;
+}
+
+.projet img {
+    height: 90%;
+    width: 40%;
+    align-items: center;
+    margin-left: 30%;
+    border-radius: 100px
+
+}
+
+footer {
+    line-height: normal;
+    background-color: rgba(0, 255, 255, 0.65);
+
+}
+
+.lefoot {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+
+}
+
+.lefoot ul {
+    text-decoration: none;
+    display: block;
+}
+
+.iconfooter {
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+    height: 20px;
+    margin-left: 25%;
+}
+
+.iconfooter a {
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+    height: 20px;
+}
+
+.iconfooter:hover {
+    cursor: pointer;
+
+}
+
+.page ul li a {
+    color: black;
+
+}
+
+@media (max-width: 500px) {
+    .lefoot {
+        display: block;
+        justify-content: space-between;
+        width: 90%;
+        height: 90%;
+    }
+
+    .imagefooter img {
+        border-radius: 40px 0 40px 0;
+        width: 50%;
+        margin-left: 30%;
+        margin-top: 5%;
+
+    }
+}
+
+.checkbox {
+    display: none;
+    float: right;
+    font-size: 30px;
+    color: white;
+    margin-right: 40px;
+    line-height: 80px;
+    cursor: pointer;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width: 500px) {
+    .checkbox {
+        display: block;
+        margin-right: 40px;
+    }
+
+    nav ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: gray;
+        top: 100%;
+        right: -100%;
+        text-align: center;
+        transition: all 0.5s;
+    }
+
+    #check:checked ~ ul {
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+    }
+}
+
+.btnprojet {
+    border-radius: 100px;
+    width: 50%;
+    height: 12%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    border: #f0fcff;
+    background-color: coral;
+}
+
+.btnprojet:hover {
+    cursor: pointer;
+    background-color: #f053ff;
+}
