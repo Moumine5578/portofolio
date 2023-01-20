@@ -13,7 +13,6 @@ body {
 }
 
 
-
 h1 {
     margin: 50px;
     font-weight: lighter;
@@ -51,10 +50,6 @@ nav ul li {
     width: 30%;
     margin-left: 10%;
     margin-top: 10px;
-}
-
-nav ul  li a:hover{
-   text-decoration: underline;
 }
 
 @media (max-width: 1200px) {
@@ -110,18 +105,20 @@ h2 {
 .presentation {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     width: auto;
+    left: 10%;
 
 }
 
 .texte1 {
     color: black;
-    text-align: center;
+    text-align: left;
     justify-content: space-between;
-    width: 90%;
-    font-size: 20px;
-    font-family: Arial;
+    width: 50%;
+    font-size: 15px;
+    font-family: "Courier New";
+    margin-left: 5%;
 }
 
 .nunu img {
